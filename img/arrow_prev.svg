@@ -1,0 +1,16 @@
+<svg id="arrow_prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a7e9e3;
+      }
+
+      .cls-2 {
+        fill: #60d8cc;
+      }
+    </style>
+  </defs>
+  <circle id="bg" class="cls-1" cx="27" cy="27" r="25"/>
+  <circle id="bg-2" data-name="bg" class="cls-2" cx="25" cy="25" r="25"/>
+  <image id="arrow" x="12" y="19" width="26" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAYAAACqnE5VAAAAlklEQVQ4jb2SzQ1BQRRGz0OsJCrw04K9hSrUYWVFLaw0QgFq0ABLJHJkYvC8vJVcTnImmTuLb2buRa3aVBfqWZ3XnH9li096wAYY5+qVKEq3m6pHH5zyPuQ1ybR01JVvtuogMiRZqDegEfZF9ex/HfAiBXWBdam2A4ZAEejor8NQtp+H4cksKqjaowMwAZbABWiHNAi4Axd5n6qeYxxKAAAAAElFTkSuQmCC"/>
+</svg>

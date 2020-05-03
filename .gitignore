@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+design-data/
+.vscode/
+.eslintrc.js
+.prettierrc.js
+.stylelintrc.js
