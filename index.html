@@ -4,35 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="email=no,telephone=no,address=no" />
-    <title>Document</title>
-    <meta name="description" content="" />
-    <link rel="icon" href="/favicon.ico" />
-
-    <meta property="og:url" content="https://" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:locale" content="ja_JP" />
-
-    <!-- viewport extraの読み込み -->
-    <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
-    <script>
-      // 最小幅を375pxに設定
-      new ViewportExtra(375);
-    </script>
+    <title>KAGU 営業部 リクルートサイト</title>
 
     <!-- jQueryの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Font Awesome の読み込み-->
-    <script
-      src="https://kit.fontawesome.com/dd74283033.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- object-fit-imagesの読み込み -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
@@ -42,8 +17,279 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
+    <header class="header">
+      <div class="header_wrapper">
+        <h1 class="header_title">
+          <img class="header_logo" class="" src="./img/logo.svg" alt="KAGU" />
+          <p class="header_text">営業部 リクルートサイト</p>
+        </h1>
+        <button
+          type="button"
+          id="js-hamburgerButton"
+          class="hamburgerButton"
+          aria-controls="globalNav"
+          aria-expanded="false"
+        >
+          <span class="hamburgerButton__line">
+            <span class="u-visuallyHidden">
+              メニューを開閉する
+            </span>
+          </span>
+        </button>
+        <nav id="globalNav" class="globalNav">
+          <ul class="globalNav_list">
+            <li class="globalNav_item">
+              <a href="">KAGUを知る</a>
+            </li>
+            <li class="globalNav_item">
+              <a href="">KAGUで働く</a>
+            </li>
+            <li class="globalNav_item">
+              <a href="">採用情報</a>
+            </li>
+          </ul>
+          <a href="" class="globalNav_button u-entryButton">
+            <span>entry</span>
+            <img src="./img/arrow.svg" alt="→" />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="mv">
+        <div class="mv_wrapper">
+          <div class="mv_imgContainer">
+            <img
+              src="./img/hero.jpg"
+              srcset="./img/hero.jpg 1x, ./img/hero@2x.jpg 2x"
+              alt=""
+              class="mv_img"
+            />
+          </div>
+          <div class="mv_catchContainer">
+            <p class="mv_catchEn">Create a smile.</p>
+            <p class="mv_catchJp">「笑顔」を創る</p>
+          </div>
+        </div>
+      </div>
+      <section class="vision">
+        <div class="vision_wrapper">
+          <div class="vision_deco"></div>
+          <div class="vision_container">
+            <h2 class="vision_title u-sectionTitle _01">vision</h2>
+            <p class="vision_subtitle u-sectionSubtitle">
+              「楽しく、ずっと笑顔で」
+            </p>
+            <p class="vision_text">
+              お客さまに「笑顔」になっていただくために、まずは、わたしたちの「笑顔」から。
+            </p>
+            <p class="vision_text">
+              まじめに、楽しく仕事をすることで、わたしたちに関わるすべての人へ、「笑顔」を届けます。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about_wrapper">
+          <div class="about-deco"></div>
+          <div class="about-deco"></div>
+          <h2 class="about_title u-sectionTitle _02">about us</h2>
+          <div class="about_container">
+            <ul class="about_list">
+              <li class="about_item">
+                <a href="">
+                  <p class="about_label">代表メッセージ</p>
+                  <p class="about_summary">
+                    代表からのメッセージをご覧いただけます。
+                  </p>
+                  <img class="about_arrow" src="./img/arrow.svg" alt="→" />
+                </a>
+              </li>
+              <li class="about_item">
+                <a href="">
+                  <p class="about_label">会社概要</p>
+                  <p class="about_summary">会社概要をご紹介します。</p>
+                  <img class="about_arrow" src="./img/arrow.svg" alt="→" />
+                </a>
+              </li>
+              <li class="about_item">
+                <a href="">
+                  <p class="about_label">沿革</p>
+                  <p class="about_summary">
+                    創業当時からの歴史をご覧いただけます。
+                  </p>
+                  <img class="about_arrow" src="./img/arrow.svg" alt="→" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="join_wrapper">
+          <h2 class="join_title u-sectionTitle _01">join us</h2>
+          <p class="join_subtitle u-sectionSubtitle">KAGUで働く</p>
+          <div class="join_members members">
+            <h3 class="members_title">社員紹介</h3>
+            <ul class="members_list">
+              <li class="members_item">
+                <a href="">
+                  <img
+                    class="members_img"
+                    src="./img/member01.png"
+                    srcset="./img/member01.png 1x, ./img/member01@2x.png 2x"
+                    alt="社員01"
+                  />
+                  <div class="members_container">
+                    <p class="members_title">自分に何ができるか</p>
+                    <p class="members_info">2019年入社<br />営業部</p>
+                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                  </div>
+                </a>
+              </li>
+              <li class="members_item">
+                <a href="">
+                  <img
+                    class="members_img"
+                    src="./img/member02.png"
+                    srcset="./img/member02.png 1x, ./img/member02@2x.png 2x"
+                    alt="社員02"
+                  />
+                  <div class="members_container">
+                    <p class="members_title">ずっとワクワクしていたい</p>
+                    <p class="members_info">2019年入社<br />営業部</p>
+                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                  </div>
+                </a>
+              </li>
+              <li class="members_item">
+                <a href="">
+                  <img
+                    class="members_img"
+                    src="./img/member03.png"
+                    srcset="./img/member03.png 1x, ./img/member03@2x.png 2x"
+                    alt="社員03"
+                  />
+                  <div class="members_container">
+                    <p class="members_title">お客様を第一に</p>
+                    <p class="members_info">2008年入社<br />営業部</p>
+                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                  </div>
+                </a>
+              </li>
+              <li class="members_item">
+                <a href="">
+                  <img
+                    class="members_img"
+                    src="./img/member04.png"
+                    srcset="./img/member04.png 1x, ./img/member04@2x.png 2x"
+                    alt="社員04"
+                  />
+                  <div class="members_container">
+                    <p class="members_title">さらなる成長を見据えて</p>
+                    <p class="members_info">2011年入社<br />営業部 係長</p>
+                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="join_contents">
+            <div class="join_content">
+              <a href="">
+                <p class="join_content_title" data-title="ON and OFF">
+                  社員のオンとオフ
+                </p>
+              </a>
+            </div>
+            <div class="join_content">
+              <a href="">
+                <p class="join_content_title" data-title="CROSS TALK">
+                  中途×新卒<br />対談
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="entry">
+        <div class="entry_wrapper">
+          <h2 class="entry_title u-sectionTitle _03">entry</h2>
+          <p class="entry_subtitle u-sectionSubtitle">採用情報</p>
+          <div class="entry_container">
+            <ul class="entry_list">
+              <li class="entry_item">
+                <a href="">
+                  <img class="entry_icon" src="./img/icon_career.svg" alt="" />
+                  <p class="entry_text">中途採用 募集要項</p>
+                  <img class="entry_arrow" src="./img/arrow.svg" alt="→" />
+                </a>
+              </li>
+              <li class="entry_item">
+                <a href="">
+                  <img class="entry_icon" src="./img/icon_flesher.svg" alt="" />
+                  <p class="entry_text">新卒採用 募集要項</p>
+                  <img class="entry_arrow" src="./img/arrow.svg" alt="→" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_wrapper">
+        <div class="footer_container">
+          <nav class="footer_nav footerNav">
+            <ul class="footerNav">
+              <li class="footerNav_item">
+                <a href="">KAGUを知る</a>
+                <ul class="footerNav_childList">
+                  <li class="footerNav_childItem">
+                    <a href="">代表メッセージ</a>
+                  </li>
+                  <li class="footerNav_childItem"><a href="">会社概要</a></li>
+                  <li class="footerNav_childItem"><a href="">沿革</a></li>
+                </ul>
+              </li>
+              <li class="footerNav_item">
+                <a href="">KAGUで働く</a>
+                <ul class="footerNav_childList">
+                  <li class="footerNav_childItem"><a href="">社員紹介</a></li>
+                  <li class="footerNav_childItem">
+                    <a href="">社員のオンとオフ</a>
+                  </li>
+                  <li class="footerNav_childItem">
+                    <a href="">中途×新卒 対談</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footerNav_item">
+                <a href="">採用情報</a>
+                <ul class="footerNav_childList">
+                  <li class="footerNav_childItem">
+                    <a href="">中途採用情報</a>
+                  </li>
+                  <li class="footerNav_childItem">
+                    <a href="">新卒採用情報</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a href="" class="footer_button u-entryButton">
+            <span>entry</span>
+            <img src="./img/arrow.svg" alt="→" />
+          </a>
+        </div>
+        <div class="footer_title">
+          <img class="footer_logo" src="./img/logo.svg" alt="KAGU" />
+          <p class="footer_text">営業部 採用サイト</p>
+        </div>
+      </div>
+      <small class="footer_copyright">© 2020 KAGU inc.</small>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
