@@ -116,7 +116,8 @@ button {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -127,6 +128,7 @@ body {
 }
 
 a {
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -146,8 +148,7 @@ footer {
 }
 
 .mv {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 600px;
   width: 100%;
 }
 
@@ -160,56 +161,64 @@ footer {
 
 .mv_imgContainer {
   height: 100%;
-  overflow: hidden;
   width: 100%;
 }
 
 .mv_imgContainer img {
   -o-object-fit: cover;
-  -o-object-position: 75% 100%;
+  -o-object-position: 70%;
   display: block;
   height: 100%;
      object-fit: cover;
-     object-position: 75% 100%;
+     object-position: 70%;
   width: 100%;
 }
 
 .mv_catchContainer {
+  -webkit-transform: translateX(-50%);
   bottom: 8.3%;
   color: #fff;
   left: 50%;
   position: absolute;
-  transform: translateX(-50%);
-  width: 90vw;
+  text-shadow: 0 0 20px rgba(21, 21, 21, 0.2);
+          transform: translateX(-50%);
+  width: 89vw;
 }
 
 .mv_catchEn {
+  -webkit-font-feature-settings: "palt";
   font-family: "Caveat", cursive;
-  font-feature-settings: "palt";
+          font-feature-settings: "palt";
   font-size: 16vw;
   letter-spacing: -0.01em;
   text-align: center;
 }
 
 .mv_catchEn::after {
+  -webkit-transform: rotate(-2deg);
+  -webkit-box-shadow: 0 0 20px rgba(21, 21, 21, 0.2);
   background-color: #fff;
+          box-shadow: 0 0 20px rgba(21, 21, 21, 0.2);
   content: "";
   display: block;
   height: 3px;
   margin: 4px auto 8px;
-  transform: rotate(-2deg);
+          transform: rotate(-2deg);
   width: 75vw;
 }
 
 .mv_catchJp {
-  font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
   font-size: 4.8vw;
   font-style: italic;
   letter-spacing: 0.1em;
+  margin-right: 16px;
   text-align: right;
 }
 
 .u-entryButton {
+  background: -webkit-gradient(linear, left top, right top, from(#24a2b3), to(#68e0cf));
   background: linear-gradient(to right, #24a2b3, #68e0cf);
   border-radius: 23px;
   color: #fff;
@@ -225,11 +234,12 @@ footer {
 }
 
 .u-entryButton img {
+  -webkit-transform: translateY(-50%);
   display: block;
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 25px;
 }
 
