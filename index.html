@@ -13,7 +13,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
 
     <!-- picturefillの読み込み -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+
+		<!-- Adobe Fontsの読み込み -->
+		<script>
+			(function (d) {
+				var config = {
+					kitId: 'qyd2nbc',
+					scriptTimeout: 3000,
+					async: true
+				},
+					h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+			})(document);
+		</script>
+
+		<!-- Google Fontsの読み込み -->
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -21,8 +36,8 @@
     <header class="header">
       <div class="header_wrapper">
         <h1 class="header_title">
-          <img class="header_logo" class="" src="./img/logo.svg" alt="KAGU" />
-          <p class="header_text">営業部 リクルートサイト</p>
+          <img class="header_logo" src="./img/logo.svg" alt="KAGU" />
+          <span class="header_text">営業部 リクルートサイト</span>
         </h1>
         <button
           type="button"

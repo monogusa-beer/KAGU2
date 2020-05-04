@@ -1,16 +1,25 @@
 //  ブレイクポイント
 $breakpoints: (
-	xs: 375px,
-	s: 560px,
-	m: 768px,
-	l: 960px,
-	xl: 1200px,
+  xs: 375px,
+  s: 560px,
+  m: 960px,
+  l: 1024px,
+  xl: 1224px,
 );
 
 // 配色
+$color-white: #fff;
+$color-black: #292929;
+$color-main: #60d8cc;
+$color-pale: #eefbfa;
+$color-nav: #2ca9b6;
+$color-shadow: #151515;
 
+$gradation-start: #24a2b3;
+$gradation-end: #68e0cf;
+$gradation: linear-gradient(to right, $gradation-start, $gradation-end);
 
 // font-family
-
+$font-en: "Caveat", cursive;
 
 // 絶対値指定
