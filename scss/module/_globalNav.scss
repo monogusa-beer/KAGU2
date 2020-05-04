@@ -1,0 +1,25 @@
+.globalNav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-white, 0.9);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  &_item {
+    color: $color-nav;
+    margin-bottom: 45px;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.is-navActive .globalNav {
+  transform: translateX(0);
+}

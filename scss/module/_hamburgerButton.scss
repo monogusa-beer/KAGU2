@@ -1,0 +1,55 @@
+.hamburgerButton {
+  width: 24px;
+  height: 18px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  &__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 2px;
+    background-color: $color-main;
+    transition: inherit;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      background-color: inherit;
+      transition: inherit;
+    }
+    &::before {
+      width: 20px;
+      top: 6px;
+      right: 0;
+    }
+    &::after {
+      width: 16px;
+      top: 12px;
+      right: 0;
+    }
+  }
+}
+
+.is-navActive .hamburgerButton__line {
+  background-color: transparent;
+}
+
+.is-navActive .hamburgerButton__line::before,
+.is-navActive .hamburgerButton__line::after {
+  top: 9px;
+  background-color: $color-main;
+  width: 24px;
+}
+
+.is-navActive .hamburgerButton__line::before {
+  transform: rotate(45deg);
+}
+
+.is-navActive .hamburgerButton__line::after {
+  transform: rotate(-45deg);
+}
