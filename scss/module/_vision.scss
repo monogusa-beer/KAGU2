@@ -1,0 +1,21 @@
+.vision {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  &_deco {
+    width: 50%;
+    height: 50px;
+    margin: 0 0 0 auto;
+    background: $gradation;
+  }
+  &_container {
+    padding: 0 20px 40px;
+    background-image: url(../img/bg.png);
+  }
+  &_text {
+    line-height: 2;
+    &:not(:last-of-type) {
+      margin-bottom: 32px;
+    }
+  }
+}

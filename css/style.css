@@ -356,6 +356,33 @@ footer {
   text-align: right;
 }
 
+.vision {
+  margin-bottom: 60px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.vision_deco {
+  background: -webkit-gradient(linear, left top, right top, from(#24a2b3), to(#68e0cf));
+  background: linear-gradient(to right, #24a2b3, #68e0cf);
+  height: 50px;
+  margin: 0 0 0 auto;
+  width: 50%;
+}
+
+.vision_container {
+  background-image: url(../img/bg.png);
+  padding: 0 20px 40px;
+}
+
+.vision_text {
+  line-height: 2;
+}
+
+.vision_text:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
 .u-entryButton {
   background: -webkit-gradient(linear, left top, right top, from(#24a2b3), to(#68e0cf));
   background: linear-gradient(to right, #24a2b3, #68e0cf);
@@ -404,7 +431,8 @@ footer {
 .u-sectionSubtitle {
   font-size: 24px;
   font-style: italic;
-  margin-top: -46px;
+  margin-bottom: 40px;
+  margin-top: -40px;
 }
 
 .u-visuallyHidden {
