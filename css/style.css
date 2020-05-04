@@ -139,6 +139,76 @@ footer {
   height: 100px;
 }
 
+.header {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+.mv {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+}
+
+.mv_wrapper {
+  height: 100%;
+  padding: 0 20px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.mv_imgContainer {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mv_imgContainer img {
+  -o-object-fit: cover;
+  -o-object-position: 75% 100%;
+  display: block;
+  height: 100%;
+     object-fit: cover;
+     object-position: 75% 100%;
+  width: 100%;
+}
+
+.mv_catchContainer {
+  bottom: 8.3%;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 90vw;
+}
+
+.mv_catchEn {
+  font-family: "Caveat", cursive;
+  font-feature-settings: "palt";
+  font-size: 16vw;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.mv_catchEn::after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 4px auto 8px;
+  transform: rotate(-2deg);
+  width: 75vw;
+}
+
+.mv_catchJp {
+  font-feature-settings: "palt";
+  font-size: 4.8vw;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+
 .u-entryButton {
   background: linear-gradient(to right, #24a2b3, #68e0cf);
   border-radius: 23px;
@@ -199,4 +269,16 @@ footer {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  visibility: hidden;
+}
+
+.members_img {
+  width: 60vw;
 }
