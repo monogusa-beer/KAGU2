@@ -1,0 +1,56 @@
+.u-entryButton {
+  display: block;
+  width: 200px;
+  height: 46px;
+  border-radius: 23px;
+  color: $color-white;
+  background: $gradation;
+  text-align: center;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  position: relative;
+  img {
+    display: block;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.u-sectionTitle {
+  font-size: 100px;
+  font-family: $font-en;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  &._01 {
+    color: $color-white;
+  }
+  &._02 {
+    color: $color-main;
+  }
+  &._03 {
+    color: $color-pale;
+  }
+}
+
+.u-sectionSubtitle {
+  font-size: 24px;
+  margin-top: -46px;
+  font-style: italic;
+}
+
+.u-visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}

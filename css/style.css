@@ -120,7 +120,10 @@ button {
 }
 
 body {
+  color: #292929;
   font-family: "fot-tsukuardgothic-std", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
 }
 
 a {
@@ -134,4 +137,66 @@ a:focus {
 
 footer {
   height: 100px;
+}
+
+.u-entryButton {
+  background: linear-gradient(to right, #24a2b3, #68e0cf);
+  border-radius: 23px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  height: 46px;
+  letter-spacing: 0.12em;
+  line-height: 46px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.u-entryButton img {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+}
+
+.u-sectionTitle {
+  font-family: "Caveat", cursive;
+  font-size: 100px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.u-sectionTitle._01 {
+  color: #fff;
+}
+
+.u-sectionTitle._02 {
+  color: #60d8cc;
+}
+
+.u-sectionTitle._03 {
+  color: #eefbfa;
+}
+
+.u-sectionSubtitle {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: -46px;
+}
+
+.u-visuallyHidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  border: 0;
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
