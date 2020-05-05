@@ -1,4 +1,11 @@
 .members {
+  &_item {
+    &:nth-of-type(even) {
+      @include mq(s) {
+        margin-top: 20px;
+      }
+    }
+  }
   &_title {
     color: $color-main;
     font-size: 24px;

@@ -212,7 +212,8 @@ a:focus {
   display: flex;
   height: 41vw;
           justify-content: center;
-  margin-bottom: 26px;
+  margin-bottom: 10%;
+  padding: 20px;
   position: relative;
   width: 41vw;
 }
@@ -220,16 +221,26 @@ a:focus {
 .about_item:nth-of-type(even) {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 6px;
-  margin-top: 20px;
+  margin-bottom: 2%;
+  margin-top: 8%;
 }
 
 .about_label {
   font-size: 18px;
+  text-align: center;
 }
 
 .about_summary {
   display: none;
+}
+
+@media print, screen and (min-width: 560px) {
+  .about_summary {
+    display: block;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-top: 40px;
+  }
 }
 
 .about_arrow {
@@ -470,6 +481,17 @@ a:focus {
   margin-bottom: 80px;
 }
 
+@media print, screen and (min-width: 560px) {
+  .join_contents {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            justify-content: space-between;
+  }
+}
+
 .join_content {
   -webkit-box-shadow: 0 0 20px rgba(21, 21, 21, 0.1);
   background-position: center;
@@ -480,8 +502,20 @@ a:focus {
   height: 270px;
 }
 
+@media print, screen and (min-width: 560px) {
+  .join_content {
+    width: 45vw;
+  }
+}
+
 .join_content:not(:last-of-type) {
   margin-bottom: 40px;
+}
+
+@media print, screen and (min-width: 560px) {
+  .join_content:not(:last-of-type) {
+    margin: 0;
+  }
 }
 
 .join_content:nth-of-type(1) {
@@ -501,6 +535,12 @@ a:focus {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .join_content:nth-of-type(2) {
     background-image: url(../img/talk@2x.jpg);
+  }
+}
+
+@media print, screen and (min-width: 560px) {
+  .join_content:nth-of-type(2) {
+    margin-top: 20px;
   }
 }
 
@@ -549,6 +589,12 @@ a:focus {
   top: 40px;
           transform: rotate(-2deg);
   width: 100%;
+}
+
+@media print, screen and (min-width: 560px) {
+  .members_item:nth-of-type(even) {
+    margin-top: 20px;
+  }
 }
 
 .members_title {
