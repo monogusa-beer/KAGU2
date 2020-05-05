@@ -10,4 +10,10 @@ $(function () {
       $(this).attr("aria-expanded", false);
     }
   });
+
+  // members_listをslick化
+  $(".js-members_list").slick({
+    prevArrow: "<div class='members_prevArrow'></div>",
+    nextArrow: "<div class='members_nextArrow'></div>",
+  });
 });

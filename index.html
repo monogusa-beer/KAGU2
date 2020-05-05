@@ -13,22 +13,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
 
     <!-- picturefillの読み込み -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
 
-		<!-- Adobe Fontsの読み込み -->
-		<script>
-			(function (d) {
-				var config = {
-					kitId: 'qyd2nbc',
-					scriptTimeout: 3000,
-					async: true
-				},
-					h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-			})(document);
-		</script>
+    <!-- Adobe Fontsの読み込み -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "qyd2nbc",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
 
-		<!-- Google Fontsの読み込み -->
-		<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Google Fontsの読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -54,21 +78,21 @@
         </button>
         <nav id="globalNav" class="globalNav">
           <div class="globalNav_wrapper">
-          	<ul class="globalNav_list">
-	            <li class="globalNav_item">
-	              <a href="">KAGUを知る</a>
-	            </li>
-	            <li class="globalNav_item">
-	              <a href="">KAGUで働く</a>
-	            </li>
-	            <li class="globalNav_item">
-	              <a href="">採用情報</a>
-	            </li>
-	          </ul>
-	          <a href="" class="globalNav_button u-entryButton">
-	            <span>entry</span>
-	            <img src="./img/arrow.svg" alt="→" />
-	          </a>
+            <ul class="globalNav_list">
+              <li class="globalNav_item">
+                <a href="">KAGUを知る</a>
+              </li>
+              <li class="globalNav_item">
+                <a href="">KAGUで働く</a>
+              </li>
+              <li class="globalNav_item">
+                <a href="">採用情報</a>
+              </li>
+            </ul>
+            <a href="" class="globalNav_button u-entryButton">
+              <span>entry</span>
+              <img src="./img/arrow.svg" alt="→" />
+            </a>
           </div>
         </nav>
       </div>
@@ -109,9 +133,9 @@
       </section>
       <section class="about">
         <div class="about_wrapper">
-          <div class="about-deco"></div>
-          <div class="about-deco"></div>
-          <h2 class="about_title u-sectionTitle _02">about us</h2>
+          <div class="about_deco"></div>
+          <div class="about_deco"></div>
+          <h2 class="about_title">about us</h2>
           <div class="about_container">
             <ul class="about_list">
               <li class="about_item">
@@ -149,7 +173,7 @@
           <p class="join_subtitle u-sectionSubtitle">KAGUで働く</p>
           <div class="join_members members">
             <h3 class="members_title">社員紹介</h3>
-            <ul class="members_list">
+            <ul class="js-members_list members_list">
               <li class="members_item">
                 <a href="">
                   <img
@@ -159,9 +183,9 @@
                     alt="社員01"
                   />
                   <div class="members_container">
-                    <p class="members_title">自分に何ができるか</p>
+                    <p class="members_label">自分に何ができるか</p>
                     <p class="members_info">2019年入社<br />営業部</p>
-                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                    <img class="members_arrow" src="./img/arrow.svg" alt="→" />
                   </div>
                 </a>
               </li>
@@ -174,9 +198,9 @@
                     alt="社員02"
                   />
                   <div class="members_container">
-                    <p class="members_title">ずっとワクワクしていたい</p>
+                    <p class="members_label">ずっとワクワクしていたい</p>
                     <p class="members_info">2019年入社<br />営業部</p>
-                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                    <img class="members_arrow" src="./img/arrow.svg" alt="→" />
                   </div>
                 </a>
               </li>
@@ -189,9 +213,9 @@
                     alt="社員03"
                   />
                   <div class="members_container">
-                    <p class="members_title">お客様を第一に</p>
+                    <p class="members_label">お客様を第一に</p>
                     <p class="members_info">2008年入社<br />営業部</p>
-                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                    <img class="members_arrow" src="./img/arrow.svg" alt="→" />
                   </div>
                 </a>
               </li>
@@ -204,9 +228,9 @@
                     alt="社員04"
                   />
                   <div class="members_container">
-                    <p class="members_title">さらなる成長を見据えて</p>
+                    <p class="members_label">さらなる成長を見据えて</p>
                     <p class="members_info">2011年入社<br />営業部 係長</p>
-                    <img class="members-arrow" src="./img/arrow.svg" alt="→" />
+                    <img class="members_arrow" src="./img/arrow.svg" alt="→" />
                   </div>
                 </a>
               </li>
@@ -307,6 +331,8 @@
       </div>
       <small class="footer_copyright">© 2020 KAGU inc.</small>
     </footer>
+
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

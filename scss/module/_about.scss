@@ -1,0 +1,72 @@
+.about {
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  position: relative;
+  margin-bottom: 80px;
+  @include retina {
+    background-image: url(../img/about-bg@2x.jpg);
+  }
+  &_deco {
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: $color-white;
+    &:nth-of-type(1) {
+      top: 0;
+      right: 0;
+    }
+    &:nth-of-type(2) {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &_title {
+    font-size: 50px;
+    text-align: right;
+    font-family: $font-en;
+    letter-spacing: 0;
+    color: $color-main;
+    text-transform: uppercase;
+    position: absolute;
+    top: 26px;
+    right: 24px;
+  }
+  &_container {
+    padding-top: 56px;
+    padding-bottom: 250px;
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_item {
+    width: 41vw;
+    height: 41vw;
+    background: $gradation;
+    color: $color-white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+    &:nth-of-type(even) {
+      align-self: flex-end;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+  }
+  &_label {
+    font-size: 18px;
+  }
+  &_summary {
+    display: none;
+  }
+  &_arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}

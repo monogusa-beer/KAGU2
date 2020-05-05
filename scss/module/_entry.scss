@@ -1,0 +1,40 @@
+.entry {
+  padding: 0 20px 80px;
+  &_item {
+    height: 100px;
+    margin: 0 auto;
+    background: $gradation;
+    color: $color-white;
+    position: relative;
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+  &_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &_icon {
+    width: 58px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  &_text {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+  &_arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}

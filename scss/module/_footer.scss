@@ -1,3 +1,22 @@
-footer {
-  height: 100px;
+.footer {
+  background-image: url(../img/bg.png);
+  padding: 40px 0 15px;
+  text-align: center;
+  &_nav {
+    display: none;
+  }
+  &_button {
+    margin: 0 auto 50px;
+  }
+  &_logo {
+    width: 145px;
+    margin-bottom: 20px;
+  }
+  &_text {
+    letter-spacing: 0.1em;
+    margin-bottom: 55px;
+  }
+  &_copyright {
+    font-size: 10px;
+  }
 }
