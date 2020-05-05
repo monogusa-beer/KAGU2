@@ -11,11 +11,45 @@
   justify-content: center;
   transform: translateX(100%);
   transition: all 0.3s ease;
+  @include mq(l) {
+    width: auto;
+    height: 100%;
+    position: static;
+    transform: initial;
+  }
+  &_wrapper {
+    @include mq(l) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &_list {
+    @include mq(l) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 16px;
+    }
+    @include mq(xl) {
+      margin-right: 36px;
+    }
+  }
   &_item {
     color: $color-nav;
     margin-bottom: 45px;
+    @include mq(l) {
+      margin: 0 16px 0 0;
+      color: $color-black;
+    }
+    @include mq(xl) {
+      margin-right: 36px;
+    }
     &:last-of-type {
       margin-bottom: 50px;
+      @include mq(l) {
+        margin: 0;
+      }
     }
   }
 }

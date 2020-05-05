@@ -4,7 +4,7 @@
   height: 600px;
   margin: 0 auto 30px;
   @include mq(m) {
-    height: calc((100vw - 100px) * 0.6);
+    height: 100vh;
     margin-bottom: 0 auto 50px;
   }
   &_wrapper {
@@ -74,6 +74,28 @@
     margin-right: 16px;
     @include mq(m) {
       font-size: 32px;
+    }
+  }
+  &_indicator {
+    display: none;
+    @include mq(m) {
+      display: inline-block;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+      right: 90px;
+      transform: rotate(90deg);
+      transform-origin: bottom right;
+      &::after {
+        margin-left: 10px;
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 2px;
+        background-color: $color-white;
+      }
     }
   }
 }

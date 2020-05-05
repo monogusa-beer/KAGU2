@@ -4,6 +4,10 @@
   @include mq(m) {
     padding: 0 50px 150px;
   }
+  &_wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
   &_members {
     margin-bottom: 80px;
   }
@@ -22,6 +26,9 @@
     color: $color-white;
     @include mq(s) {
       width: 47.5%;
+    }
+    @include mq(xl) {
+      height: 500px;
     }
     &:not(:last-of-type) {
       margin-bottom: 40px;
@@ -62,6 +69,10 @@
     line-height: 24px;
     text-shadow: 0 0 20px rgba($color-shadow, 0.5);
     position: relative;
+    @include mq(xl) {
+      font-size: 24px;
+      line-height: 36px;
+    }
     &::before {
       content: attr(data-title);
       display: block;
@@ -69,6 +80,10 @@
       font-family: $font-en;
       letter-spacing: 0;
       margin-bottom: 27px;
+      @include mq(xl) {
+        font-size: 72px;
+        margin-bottom: 42px;
+      }
     }
     &::after {
       content: "";
@@ -81,6 +96,10 @@
       top: 40px;
       left: 0;
       box-shadow: 0 0 20px rgba($color-shadow, 0.5);
+      @include mq(xl) {
+				height: 4px;
+				top: 60px;
+      }
     }
   }
 }
