@@ -1,13 +1,32 @@
 .entry {
   padding: 0 20px 80px;
+  @include mq(m) {
+    padding: 0 50px 150px;
+  }
+  &_list {
+    @include mq(m) {
+      display: flex;
+    }
+  }
   &_item {
     height: 100px;
     margin: 0 auto;
     background: $gradation;
     color: $color-white;
     position: relative;
+    @include mq(m) {
+      width: 50%;
+    }
     &:not(:last-of-type) {
       margin-bottom: 20px;
+      @include mq(m) {
+        margin-bottom: 0;
+      }
+    }
+    &:nth-of-type(even) {
+      @include mq(m) {
+        margin-top: 20px;
+      }
     }
   }
   &_item a {

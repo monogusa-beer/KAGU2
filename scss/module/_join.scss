@@ -1,6 +1,9 @@
 .join {
   background-image: url(../img/bg.png);
   padding: 0 20px 80px;
+  @include mq(m) {
+    padding: 0 50px 150px;
+  }
   &_members {
     margin-bottom: 80px;
   }
@@ -18,7 +21,7 @@
     box-shadow: 0 0 20px rgba($color-shadow, 0.1);
     color: $color-white;
     @include mq(s) {
-      width: 45vw;
+      width: 47.5%;
     }
     &:not(:last-of-type) {
       margin-bottom: 40px;
@@ -39,6 +42,9 @@
       }
       @include mq(s) {
         margin-top: 20px;
+      }
+      @include mq(m) {
+        margin-top: 60px;
       }
     }
   }

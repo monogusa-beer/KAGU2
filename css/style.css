@@ -153,11 +153,31 @@ a:focus {
   }
 }
 
+@media print, screen and (min-width: 960px) {
+  .about {
+    background-image: url(../img/about-bg_pc.jpg);
+    margin-bottom: 150px;
+    padding: 50px 50px 150px;
+  }
+}
+
+@media print and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), print and (min-resolution: 192dpi), screen and (min-width: 960px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: url(../img/about-bg_pc@2x.jpg);
+  }
+}
+
 .about_deco {
   background-color: #fff;
   height: 50px;
   position: absolute;
   width: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about_deco {
+    height: 100px;
+  }
 }
 
 .about_deco:nth-of-type(1) {
@@ -182,9 +202,23 @@ a:focus {
   top: 26px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .about_title {
+    font-size: 12.5vw;
+    right: 50px;
+    top: 0;
+  }
+}
+
 .about_container {
   padding-bottom: 250px;
   padding-top: 56px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about_container {
+    padding: 0;
+  }
 }
 
 .about_list {
@@ -196,6 +230,16 @@ a:focus {
   display: flex;
       flex-wrap: wrap;
           justify-content: space-between;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about_list {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    padding-right: 50px;
+    width: calc(50vw - 50px);
+  }
 }
 
 .about_item {
@@ -218,6 +262,15 @@ a:focus {
   width: 41vw;
 }
 
+@media print, screen and (min-width: 960px) {
+  .about_item {
+    height: 19vw;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 19vw;
+  }
+}
+
 .about_item:nth-of-type(even) {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -225,9 +278,23 @@ a:focus {
   margin-top: 8%;
 }
 
+@media print, screen and (min-width: 960px) {
+  .about_item:nth-of-type(even) {
+    -ms-flex-item-align: initial;
+        align-self: initial;
+    margin: 0;
+  }
+}
+
 .about_label {
   font-size: 18px;
   text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about_label {
+    font-size: 20px;
+  }
 }
 
 .about_summary {
@@ -239,7 +306,7 @@ a:focus {
     display: block;
     font-weight: normal;
     line-height: 1.3;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -253,6 +320,20 @@ a:focus {
   padding: 0 20px 80px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .entry {
+    padding: 0 50px 150px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .entry_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .entry_item {
   background: -webkit-gradient(linear, left top, right top, from(#24a2b3), to(#68e0cf));
   background: linear-gradient(to right, #24a2b3, #68e0cf);
@@ -262,8 +343,26 @@ a:focus {
   position: relative;
 }
 
+@media print, screen and (min-width: 960px) {
+  .entry_item {
+    width: 50%;
+  }
+}
+
 .entry_item:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .entry_item:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .entry_item:nth-of-type(even) {
+    margin-top: 20px;
+  }
 }
 
 .entry_item a {
@@ -305,12 +404,48 @@ a:focus {
   text-align: center;
 }
 
+@media print, screen and (min-width: 960px) {
+  .footer {
+    padding: 50px 100px 50px;
+    text-align: left;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .footer_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
+
 .footer_nav {
   display: none;
 }
 
+@media print, screen and (min-width: 960px) {
+  .footer_nav {
+    display: block;
+  }
+}
+
 .footer_button {
   margin: 0 auto 50px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .footer_button {
+    margin: 0 0 90px auto;
+  }
 }
 
 .footer_logo {
@@ -324,7 +459,31 @@ a:focus {
 }
 
 .footer_copyright {
+  display: block;
   font-size: 10px;
+  text-align: center;
+}
+
+.footerNav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  width: 420px;
+}
+
+.footerNav_item > a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footerNav_childItem {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .globalNav {
@@ -477,6 +636,12 @@ a:focus {
   padding: 0 20px 80px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .join {
+    padding: 0 50px 150px;
+  }
+}
+
 .join_members {
   margin-bottom: 80px;
 }
@@ -504,7 +669,7 @@ a:focus {
 
 @media print, screen and (min-width: 560px) {
   .join_content {
-    width: 45vw;
+    width: 47.5%;
   }
 }
 
@@ -541,6 +706,12 @@ a:focus {
 @media print, screen and (min-width: 560px) {
   .join_content:nth-of-type(2) {
     margin-top: 20px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .join_content:nth-of-type(2) {
+    margin-top: 60px;
   }
 }
 
@@ -659,14 +830,29 @@ a:focus {
 
 .mv {
   height: 600px;
+  margin: 0 auto 30px;
+  max-width: 1600px;
   width: 100%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .mv {
+    height: calc((100vw - 100px) * 0.6);
+    margin-bottom: 0 auto 50px;
+  }
 }
 
 .mv_wrapper {
   height: 100%;
-  padding: 0 20px 20px;
+  padding: 0 20px;
   position: relative;
   width: 100%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .mv_wrapper {
+    padding: 0 50px;
+  }
 }
 
 .mv_imgContainer {
@@ -695,6 +881,16 @@ a:focus {
   width: 89vw;
 }
 
+@media print, screen and (min-width: 960px) {
+  .mv_catchContainer {
+    -webkit-transform: translateX(0);
+    bottom: 100px;
+    left: 100px;
+            transform: translateX(0);
+    width: 770px;
+  }
+}
+
 .mv_catchEn {
   -webkit-font-feature-settings: "palt";
   font-family: "Caveat", cursive;
@@ -702,6 +898,12 @@ a:focus {
   font-size: 16vw;
   letter-spacing: -0.01em;
   text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .mv_catchEn {
+    font-size: 160px;
+  }
 }
 
 .mv_catchEn::after {
@@ -717,6 +919,12 @@ a:focus {
   width: 75vw;
 }
 
+@media print, screen and (min-width: 960px) {
+  .mv_catchEn::after {
+    width: 100%;
+  }
+}
+
 .mv_catchJp {
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
@@ -727,10 +935,21 @@ a:focus {
   text-align: right;
 }
 
+@media print, screen and (min-width: 960px) {
+  .mv_catchJp {
+    font-size: 32px;
+  }
+}
+
 .vision {
   margin-bottom: 60px;
-  margin-top: 30px;
   width: 100%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .vision {
+    margin-bottom: 150px;
+  }
 }
 
 .vision_deco {
@@ -741,17 +960,55 @@ a:focus {
   width: 50%;
 }
 
+@media print, screen and (min-width: 960px) {
+  .vision_deco {
+    height: 400px;
+  }
+}
+
 .vision_container {
   background-image: url(../img/bg.png);
   padding: 0 20px 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .vision_container {
+    height: 500px;
+    margin-top: -320px;
+    min-width: 820px;
+    padding: 0 0 0 150px;
+    width: 70vw;
+  }
 }
 
 .vision_text {
   line-height: 2;
 }
 
+@media print, screen and (min-width: 960px) {
+  .vision_text {
+    font-size: 18px;
+  }
+}
+
 .vision_text:not(:last-of-type) {
   margin-bottom: 32px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .vision_text:not(:last-of-type) {
+    margin-bottom: 36px;
+  }
+}
+
+.vision_text br {
+  display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .vision_text br {
+    display: inline;
+  }
 }
 
 .u-entryButton {
@@ -787,6 +1044,12 @@ a:focus {
   text-transform: uppercase;
 }
 
+@media print, screen and (min-width: 960px) {
+  .u-sectionTitle {
+    font-size: 200px;
+  }
+}
+
 .u-sectionTitle._01 {
   color: #fff;
 }
@@ -804,6 +1067,14 @@ a:focus {
   font-style: italic;
   margin-bottom: 40px;
   margin-top: -40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .u-sectionSubtitle {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: -80px;
+  }
 }
 
 .u-visuallyHidden {

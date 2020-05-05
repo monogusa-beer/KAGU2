@@ -1,21 +1,46 @@
 .vision {
   width: 100%;
-  margin-top: 30px;
   margin-bottom: 60px;
+  @include mq(m) {
+    margin-bottom: 150px;
+  }
   &_deco {
     width: 50%;
     height: 50px;
     margin: 0 0 0 auto;
     background: $gradation;
+    @include mq(m) {
+      height: 400px;
+    }
   }
   &_container {
     padding: 0 20px 40px;
     background-image: url(../img/bg.png);
+    @include mq(m) {
+      margin-top: -320px;
+      width: 70vw;
+      min-width: 820px;
+      height: 500px;
+      padding: 0 0 0 150px;
+    }
   }
   &_text {
     line-height: 2;
+    @include mq(m) {
+      font-size: 18px;
+    }
     &:not(:last-of-type) {
       margin-bottom: 32px;
+      @include mq(m) {
+        margin-bottom: 36px;
+      }
+    }
+
+    br {
+      display: none;
+      @include mq(m) {
+        display: inline;
+      }
     }
   }
 }

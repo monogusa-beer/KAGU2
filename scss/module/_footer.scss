@@ -2,11 +2,30 @@
   background-image: url(../img/bg.png);
   padding: 40px 0 15px;
   text-align: center;
+  @include mq(m) {
+    padding: 50px 100px 50px;
+    text-align: left;
+  }
+  &_wrapper {
+    @include mq(m) {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
   &_nav {
     display: none;
+    @include mq(m) {
+      display: block;
+    }
   }
   &_button {
     margin: 0 auto 50px;
+    @include mq(m) {
+      margin: 0 0 90px auto;
+    }
   }
   &_logo {
     width: 145px;
@@ -17,6 +36,8 @@
     margin-bottom: 55px;
   }
   &_copyright {
+    display: block;
     font-size: 10px;
+    text-align: center;
   }
 }

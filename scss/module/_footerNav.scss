@@ -1,0 +1,15 @@
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+	width: 420px;
+	margin-bottom: 30px;
+  &_item > a {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &_childItem {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}

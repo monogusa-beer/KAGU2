@@ -23,6 +23,12 @@ $(function () {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
     ],
   });
 });
